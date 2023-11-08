@@ -1,0 +1,17 @@
+.headerProducts {
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.tab:hover {
+    cursor: pointer;
+    color: darkslategray;
+}
+
+.selected {
+    text-decoration: underline;
+}

@@ -1,0 +1,12 @@
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.icon:hover {
+    cursor: pointer;
+    color: blue;
+}

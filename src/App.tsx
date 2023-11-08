@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+import {
+  Route,
+  Routes
+} from "react-router-dom";
+
 import './App.css';
+import Header from './components/Header/Header';
+import MockPage from './common/MockPage/MockPage';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Routes>
+
+        <Route path="/" element={<MockPage text='Welcom to Klumo' />} />
+        <Route path="/poster" element={<MockPage text='Poster' />} />
+        <Route path="/canvas" element={<MockPage text='Canvas' />} />
+        <Route path="/digital-download" element={<MockPage text='Digital Download' />} />
+        <Route path="/gift-card" element={<MockPage text='Gift Card' />} />
+
+        <Route path="/wish-list" element={<MockPage text='Wish List' />} />
+        <Route path="/account" element={<MockPage text='Account' />} />
+        <Route path="/cart" element={<MockPage text='Cart' />} />
+
+      </Routes>
+    </>
   );
 }
 
