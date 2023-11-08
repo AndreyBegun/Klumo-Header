@@ -1,4 +1,4 @@
-## run App Localy
+## How to run App Localy
 1) git clone
 2) cd klumo-app
 3) npm install
